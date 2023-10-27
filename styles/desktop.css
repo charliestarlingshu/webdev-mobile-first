@@ -11,6 +11,7 @@ h2 {
 header {
   border-radius: 8px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 header h1 a:hover {
@@ -38,6 +39,7 @@ nav li:first-child {
 }
 main{
   display: flex;
+  flex-direction: column;
 }
 .section {
   /*flex: 1 1 auto;*/
@@ -49,6 +51,7 @@ main{
 }
 .sidebar {
   flex: 0 1 200px;
+  flex-direction: row;
   padding: 20px 40px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -72,4 +75,27 @@ th {
 tr:nth-child(odd) {
   background-color: #ccc;
 }
-/* Form Styling Needs Adding */
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+form > div {
+  margin: 15px 0;
+  display: flex;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+}
+
+submitContainer {
+  justify-content: flex-end;
+}
+
+input[type="submit"] {
+  width: auto;
+  margin: 0;
+}
